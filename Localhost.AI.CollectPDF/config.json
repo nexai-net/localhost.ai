@@ -1,0 +1,33 @@
+{
+  "AppName": "LocalPDFCollector",
+
+  "ProjectName": "*",
+  "Language": "*",
+  "Category": "GUI",
+  "AppDescription": "Console APP collectif PDF",
+  "AppDocumentationUrl": "httsp://www.nexai.net",
+  "DataRepository": {
+    "Url": "http://localhost:9200",
+    "Layer": "Default",
+    "Prefix": "",
+    "Password": "",
+    "User": ""
+  },
+  "DialogRepository": {
+    "Url": "http://localhost:9200",
+    "Layer": "Default",
+    "Prefix": "",
+    "Password": "",
+    "User": ""
+  },
+  "AdminRepository": {
+    "Url": "http://localhost:9200",
+    "Layer": "Default",
+    "Prefix": "",
+    "Password": "",
+    "User": ""
+  },
+  "LatencyMs": 1,
+  "ECMRootFolder": "E:\\Servers\\documents"
+
+}

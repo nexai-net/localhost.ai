@@ -1,0 +1,13 @@
+var searchData=
+[
+  ['save_0',['Save',['../class_localhost_1_1_a_i_1_1_core_1_1_data_1_1_elastic_repository.html#a0703bdc1b35e6ee4d5ed961e9c11f08f',1,'Localhost::AI::Core::Data::ElasticRepository']]],
+  ['save_3c_20tentity_20_3e_1',['Save&lt; TEntity &gt;',['../class_localhost_1_1_a_i_1_1_core_1_1_data_1_1_elastic_repository.html#ad14cc492084e99e0afbf33ddcf4035d2',1,'Localhost.AI.Core.Data.ElasticRepository.Save&lt; TEntity &gt;(params TEntity[] entities)'],['../class_localhost_1_1_a_i_1_1_core_1_1_data_1_1_elastic_repository.html#a747f7ab26dae592eec2605bcfb6ba84e',1,'Localhost.AI.Core.Data.ElasticRepository.Save&lt; TEntity &gt;(IEnumerable&lt; TEntity &gt; entities)'],['../class_localhost_1_1_a_i_1_1_core_1_1_data_1_1_elastic_repository.html#a0f659ac1472f907ebc855a6f9c0d2288',1,'Localhost.AI.Core.Data.ElasticRepository.Save&lt; TEntity &gt;(TEntity entity)']]],
+  ['search_3c_20tentity_20_3e_2',['Search&lt; TEntity &gt;',['../class_localhost_1_1_a_i_1_1_core_1_1_data_1_1_elastic_repository.html#aeb3a6a0755066e75475bd58ed39be7a6',1,'Localhost::AI::Core::Data::ElasticRepository']]],
+  ['searchincache_3',['SearchInCache',['../class_localhost_1_1_a_i_1_1_core_1_1_data_1_1_elastic_repository.html#a8eb783364d885827015c14daf2729a2a',1,'Localhost::AI::Core::Data::ElasticRepository']]],
+  ['searchinentities_4',['SearchInEntities',['../class_localhost_1_1_a_i_1_1_core_1_1_data_1_1_elastic_repository.html#af5011bbd86a0d665579bf5ac3487dd86',1,'Localhost::AI::Core::Data::ElasticRepository']]],
+  ['searchtextindocuments_3c_20tentity_20_3e_5',['SearchTextInDocuments&lt; TEntity &gt;',['../class_localhost_1_1_a_i_1_1_core_1_1_data_1_1_elastic_repository.html#a8bc93af739953871f520781c125e0046',1,'Localhost::AI::Core::Data::ElasticRepository']]],
+  ['sessionmanager_6',['SessionManager',['../class_localhost_1_1_a_i_1_1_core_1_1_framework_1_1_session_manager.html#a6f7ab71d416326e9a8e928a070833d7c',1,'Localhost::AI::Core::Framework::SessionManager']]],
+  ['symbolicprocessoreditform_7',['SymbolicProcessorEditForm',['../class_localhost_1_1_a_i_1_1_gui_1_1_symbolic_processor_edit_form.html#a45f86a86f14ef9d0a0f8c082492989fc',1,'Localhost::AI::Gui::SymbolicProcessorEditForm']]],
+  ['symbolicprocessorsave_8',['SymbolicProcessorSave',['../class_localhost_1_1_a_i_1_1_core_1_1_framework_1_1_session_manager.html#a0ac3094159ad605f0a3c3fd93d860468',1,'Localhost::AI::Core::Framework::SessionManager']]],
+  ['symbolicprocessorssearch_9',['SymbolicProcessorsSearch',['../class_localhost_1_1_a_i_1_1_core_1_1_framework_1_1_session_manager.html#a6bada7721a72985972c4492db0666c09',1,'Localhost::AI::Core::Framework::SessionManager']]]
+];

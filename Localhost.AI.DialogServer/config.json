@@ -1,0 +1,34 @@
+{
+  "AppName": "LocalhostDialogServer",
+
+  "ProjectName": "*",
+  "Language": "*",
+  "Category": "GUI",
+  "AppDescription": "A dialog rest server",
+  "AppDocumentationUrl": "httsp://www.nexai.net",
+  "DataRepository": {
+    "Url": "http://localhost:9200",
+    "Layer": "Default",
+    "Prefix": "",
+    "Password": "",
+    "User": ""
+  },
+  "DialogRepository": {
+    "Url": "http://localhost:9200",
+    "Layer": "Default",
+    "Prefix": "",
+    "Password": "",
+    "User": ""
+  },
+  "AdminRepository": {
+    "Url": "http://localhost:9200",
+    "Layer": "Default",
+    "Prefix": "",
+    "Password": "",
+    "User": ""
+  },
+  "LatencyMs": 1,
+  "OllamaUrl": "http://localhost:11434/v1/chat/completions"
+ 
+
+}

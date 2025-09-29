@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['machinename_0',['MachineName',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_entity_base.html#ae43c7fa87ec96eeb43ad5b265898c013',1,'Localhost::AI::Core::Models::EntityBase']]],
+  ['mainform_1',['MainForm',['../class_localhost_1_1_a_i_1_1_gui_1_1_main_form.html',1,'Localhost.AI.Gui.MainForm'],['../class_localhost_1_1_a_i_1_1_gui_1_1_main_form.html#a6dc5113619bbd0b9922af64c66d837cd',1,'Localhost.AI.Gui.MainForm.MainForm()']]],
+  ['mainform_2ecs_2',['MainForm.cs',['../_main_form_8cs.html',1,'']]],
+  ['mainform_2edesigner_2ecs_3',['MainForm.Designer.cs',['../_main_form_8_designer_8cs.html',1,'']]],
+  ['message_4',['Message',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_l_l_m_1_1_message.html',1,'Localhost.AI.Core.Models.LLM.Message'],['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_service_return.html#a293c405bc877aaf9b97bbb32fc343f27',1,'Localhost.AI.Core.Models.ServiceReturn.Message']]],
+  ['message_5',['message',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_l_l_m_1_1_choice.html#ae2650cdfa13b4e1c8ae91ac136c7b1f8',1,'Localhost::AI::Core::Models::LLM::Choice']]],
+  ['message_2ecs_6',['Message.cs',['../_message_8cs.html',1,'']]],
+  ['messages_7',['messages',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_l_l_m_1_1_request.html#abfc4ec30f1dad12159cd83101956f8cc',1,'Localhost::AI::Core::Models::LLM::Request']]],
+  ['metadata_8',['MetaData',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_meta_data.html',1,'Localhost::AI::Core::Models']]],
+  ['metadata_2ecs_9',['MetaData.cs',['../_meta_data_8cs.html',1,'']]],
+  ['metadatas_10',['MetaDatas',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_paragraph.html#ab2f9bd3dfea0e10ccac9ffc1fdfd6edb',1,'Localhost::AI::Core::Models::Paragraph']]],
+  ['metadatas_11',['metaDatas',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_l_l_m_1_1_dialog.html#a36a54e1b158cbc136d30af6e33f1157e',1,'Localhost::AI::Core::Models::LLM::Dialog']]],
+  ['model_12',['model',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_l_l_m_1_1_cache.html#aba8fb217f4314e171e8117184d177031',1,'Localhost.AI.Core.Models.LLM.Cache.model'],['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_l_l_m_1_1_request.html#ad4e96cdf64bb12ac14937627ec669474',1,'Localhost.AI.Core.Models.LLM.Request.model'],['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_l_l_m_1_1_response.html#afbdfc10e63b4b7932ca362f01f52188c',1,'Localhost.AI.Core.Models.LLM.Response.model']]],
+  ['must_13',['Must',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_corpus_1_1_symbolic_processor.html#aee8a4ac9119ee33f04e66dadf2c5d31d',1,'Localhost::AI::Core::Models::Corpus::SymbolicProcessor']]],
+  ['mustkeysearcgh_14',['MustKeySearcgh',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_corpus_1_1_symbolic_processor.html#a56912d6317db17a8d3973408d86d5ed3',1,'Localhost::AI::Core::Models::Corpus::SymbolicProcessor']]],
+  ['mustnot_15',['MustNot',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_corpus_1_1_symbolic_processor.html#a3193834299888fa91b272b868991d4e0',1,'Localhost::AI::Core::Models::Corpus::SymbolicProcessor']]],
+  ['mustnotkeysearch_16',['MustNotKeySearch',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_corpus_1_1_symbolic_processor.html#a3640a05ad90bd9eab6f21665800b2119',1,'Localhost::AI::Core::Models::Corpus::SymbolicProcessor']]]
+];

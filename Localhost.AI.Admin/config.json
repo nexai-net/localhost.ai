@@ -1,0 +1,33 @@
+{
+  "AppName": "LocalhostAdmin",
+
+  "ProjectName": "*",
+  "Language": "*",
+  "Category": "Console",
+  "AppDescription": "A console application",
+  "AppDocumentationUrl": "httsp://www.nexai.net",
+  "DataRepository": {
+    "Url": "http://localhost:9200",
+    "Layer": "Default",
+    "Prefix": "",
+    "Password": "",
+    "User": ""
+  },
+  "DialogRepository": {
+    "Url": "http://localhost:9200",
+    "Layer": "Default",
+    "Prefix": "",
+    "Password": "",
+    "User": ""
+  },
+  "AdminRepository": {
+    "Url": "http://localhost:9200",
+    "Layer": "Default",
+    "Prefix": "",
+    "Password": "",
+    "User": ""
+  },
+  "LatencyMs": 100,
+  "OllamaUrl": "http://localhost:11434/v1/chat/completions",
+  "DialogServerUrl": "http://localhost:50824/aiassistant"
+}

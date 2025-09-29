@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['readme_0',['README',['../md__r_e_a_d_m_e.html',1,'']]],
+  ['readme_2emd_1',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['reflex_2',['Reflex',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_corpus_1_1_symbolic_processor.html#af56ad8f7e2a5527a783c2597cb4e3a72',1,'Localhost::AI::Core::Models::Corpus::SymbolicProcessor']]],
+  ['reflexkeysearch_3',['ReflexKeySearch',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_corpus_1_1_symbolic_processor.html#afc974a1a9976a5f247ea1b30ff9e0aa2',1,'Localhost::AI::Core::Models::Corpus::SymbolicProcessor']]],
+  ['relatedentities_4',['RelatedEntities',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_corpus_1_1_entity.html#ab23e772f2a0aea92dae66795c3c5f79c',1,'Localhost::AI::Core::Models::Corpus::Entity']]],
+  ['request_5',['Request',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_l_l_m_1_1_request.html',1,'Localhost::AI::Core::Models::LLM']]],
+  ['request_6',['request',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_l_l_m_1_1_completion.html#a00e679ff1639e7ad4ff0cfd6ced2c293',1,'Localhost.AI.Core.Models.LLM.Completion.request'],['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_l_l_m_1_1_dialog.html#a92a87717fba7cd62b60e46463dc3fc6c',1,'Localhost.AI.Core.Models.LLM.Dialog.request']]],
+  ['request_2ecs_7',['Request.cs',['../_request_8cs.html',1,'']]],
+  ['requestrobot_8',['RequestRobot',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_request_robot.html',1,'Localhost::AI::Core::Models']]],
+  ['resource_9',['Resource',['../class_localhost_1_1_a_i_1_1_dialog_server_1_1_resource.html',1,'Localhost::AI::DialogServer']]],
+  ['resource_2edesigner_2ecs_10',['Resource.Designer.cs',['../_resource_8_designer_8cs.html',1,'']]],
+  ['resourcemanager_11',['ResourceManager',['../class_localhost_1_1_a_i_1_1_dialog_server_1_1_resource.html#a4fd889a5d187a46ec7de6073abd37046',1,'Localhost::AI::DialogServer::Resource']]],
+  ['resources_2edesigner_2ecs_12',['Resources.Designer.cs',['../_resources_8_designer_8cs.html',1,'']]],
+  ['response_13',['Response',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_l_l_m_1_1_response.html',1,'Localhost::AI::Core::Models::LLM']]],
+  ['response_14',['response',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_l_l_m_1_1_completion.html#af60f68995cc71161d6d928ce97f60e29',1,'Localhost.AI.Core.Models.LLM.Completion.response'],['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_l_l_m_1_1_dialog.html#a4ab6458810bb6489ca6a035e966cca76',1,'Localhost.AI.Core.Models.LLM.Dialog.response']]],
+  ['response_2ecs_15',['Response.cs',['../_response_8cs.html',1,'']]],
+  ['responserobot_16',['ResponseRobot',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_response_robot.html',1,'Localhost::AI::Core::Models']]],
+  ['resthelper_2ecs_17',['RestHelper.cs',['../_rest_helper_8cs.html',1,'']]],
+  ['result_18',['result',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_response_robot.html#a71087abaedea176bfa94ddf34d3d6b03',1,'Localhost::AI::Core::Models::ResponseRobot']]],
+  ['returnedid_19',['ReturnedId',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_service_return.html#aa5c476f30fdb2274683b46d4323e9544',1,'Localhost::AI::Core::Models::ServiceReturn']]],
+  ['robot_2ecs_20',['Robot.cs',['../_robot_8cs.html',1,'']]],
+  ['role_21',['role',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_l_l_m_1_1_message.html#ae933fa8e186259ea8283ef9c426424a8',1,'Localhost::AI::Core::Models::LLM::Message']]]
+];

@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['load_3c_20tentity_20_3e_0',['Load&lt; TEntity &gt;',['../class_localhost_1_1_a_i_1_1_core_1_1_data_1_1_elastic_repository.html#a650d765238545b02d1de9a8037693f9e',1,'Localhost::AI::Core::Data::ElasticRepository']]],
+  ['log_1',['Log',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_log.html#af60b7a4d28b60c18699ccbafc3a7a85f',1,'Localhost.AI.Core.Models.Log.Log()'],['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_log.html#af8c9c8625c0224360a435a904f174a38',1,'Localhost.AI.Core.Models.Log.Log(string? id)']]],
+  ['logsave_2',['LogSave',['../class_localhost_1_1_a_i_1_1_core_1_1_framework_1_1_session_manager.html#ab9483dac77781c0b2f5a0d8ac2a2fb22',1,'Localhost.AI.Core.Framework.SessionManager.LogSave(string comment, string appName, string type)'],['../class_localhost_1_1_a_i_1_1_core_1_1_framework_1_1_session_manager.html#ab8b21c339858127e92eb365259b10b38',1,'Localhost.AI.Core.Framework.SessionManager.LogSave(string AppName, string MachineName, string UserName, string Message, string tags, string Type)'],['../class_localhost_1_1_a_i_1_1_core_1_1_framework_1_1_session_manager.html#a53a6843af5d2f6f9cd3ef7c2b1e1c908',1,'Localhost.AI.Core.Framework.SessionManager.LogSave(Log log)']]]
+];

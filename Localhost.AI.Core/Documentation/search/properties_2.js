@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['cached_0',['cached',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_l_l_m_1_1_dialog.html#a9b243862d41041289ff1e4ee53dc7017',1,'Localhost::AI::Core::Models::LLM::Dialog']]],
+  ['cachedcompletion_1',['cachedCompletion',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_l_l_m_1_1_completion.html#acc11a6d7b9d26f0244cc6670f63083a8',1,'Localhost::AI::Core::Models::LLM::Completion']]],
+  ['category_2',['Category',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_config.html#a3818472e46212ed6b4f11360e6058998',1,'Localhost::AI::Core::Models::Config']]],
+  ['choices_3',['choices',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_l_l_m_1_1_response.html#a2512686fc5296e10f8e37e097d99369c',1,'Localhost::AI::Core::Models::LLM::Response']]],
+  ['comment_4',['Comment',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_entity_base.html#a7afc31bf4c0e99a51f023e38b388ab70',1,'Localhost::AI::Core::Models::EntityBase']]],
+  ['completion_5',['completion',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_l_l_m_1_1_cache.html#a7520d12a42e31af939e0a8476e39419f',1,'Localhost::AI::Core::Models::LLM::Cache']]],
+  ['completion_5ftokens_6',['completion_tokens',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_l_l_m_1_1_usage.html#a2d42ee8dc33c7d2de209c8c0093865bd',1,'Localhost::AI::Core::Models::LLM::Usage']]],
+  ['componentname_7',['ComponentName',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_performance.html#a4c9f4e656e28919fa35875fdcd66ca69',1,'Localhost::AI::Core::Models::Performance']]],
+  ['componenttype_8',['ComponentType',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_performance.html#ad25058a83ab1b9470620a315bf85a407',1,'Localhost::AI::Core::Models::Performance']]],
+  ['content_9',['content',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_l_l_m_1_1_message.html#a5eeaac4e22c482ae9a5a96f3975ceb46',1,'Localhost::AI::Core::Models::LLM::Message']]],
+  ['contextprocessordisplay_10',['CONTEXTPROCESSORDISPLAY',['../class_localhost_1_1_a_i_1_1_dialog_server_1_1_resource.html#a86902318bf459b4038870be21f3a0c5b',1,'Localhost::AI::DialogServer::Resource']]],
+  ['contextprocessorupdate_11',['CONTEXTPROCESSORUPDATE',['../class_localhost_1_1_a_i_1_1_dialog_server_1_1_resource.html#af8c71fb2be3751356e6e9dd41def6771',1,'Localhost::AI::DialogServer::Resource']]],
+  ['counter_12',['counter',['../class_localhost_1_1_a_i_1_1_dialog_1_1_models_1_1_dialog_state.html#adb805aa2e9060b7ac3c990cadb5b7368',1,'Localhost::AI::Dialog::Models::DialogState']]],
+  ['created_13',['created',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_l_l_m_1_1_response.html#a83812a351a96e4c3ec08d53cfd264c13',1,'Localhost::AI::Core::Models::LLM::Response']]],
+  ['criteria_14',['criteria',['../class_localhost_1_1_a_i_1_1_core_1_1_models_1_1_entity_item.html#a59d83bb0fd6547670f346975c3cac439',1,'Localhost::AI::Core::Models::EntityItem']]],
+  ['culture_15',['Culture',['../class_localhost_1_1_a_i_1_1_dialog_server_1_1_resource.html#a1501f2b4ca5910ce2c5f59ebb24d868f',1,'Localhost::AI::DialogServer::Resource']]]
+];

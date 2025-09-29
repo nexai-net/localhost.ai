@@ -1,0 +1,25 @@
+var dir_d9797fe1bcbb160b9e2f2e64d2391c80 =
+[
+    [ "Models", "dir_79c867ebbe0111109dc810b2bfbb1a03.html", "dir_79c867ebbe0111109dc810b2bfbb1a03" ],
+    [ "obj", "dir_9a6b186565c8b91b520a3321e9fb05e8.html", "dir_9a6b186565c8b91b520a3321e9fb05e8" ],
+    [ "ContextProcessorVGrain.cs", "_context_processor_v_grain_8cs.html", null ],
+    [ "DialogCacheProcessorVGrain.cs", "_dialog_cache_processor_v_grain_8cs.html", null ],
+    [ "DialogInboundVGrain.cs", "_dialog_inbound_v_grain_8cs.html", null ],
+    [ "DialogOutboundVGrain.cs", "_dialog_outbound_v_grain_8cs.html", null ],
+    [ "DialogPostProcessorVGrain.cs", "_dialog_post_processor_v_grain_8cs.html", "_dialog_post_processor_v_grain_8cs" ],
+    [ "DialogPreProcessorVGrain.cs", "_dialog_pre_processor_v_grain_8cs.html", null ],
+    [ "DialogProcessorVGrain.cs", "_dialog_processor_v_grain_8cs.html", null ],
+    [ "EmotionnalInboundProcessorVGrain.cs", "_emotionnal_inbound_processor_v_grain_8cs.html", null ],
+    [ "EmotionnalOutboundVGrain.cs", "_emotionnal_outbound_v_grain_8cs.html", null ],
+    [ "IContextProcessorVGrain.cs", "_i_context_processor_v_grain_8cs.html", "_i_context_processor_v_grain_8cs" ],
+    [ "IDialogCacheProcessorVGrain.cs", "_i_dialog_cache_processor_v_grain_8cs.html", "_i_dialog_cache_processor_v_grain_8cs" ],
+    [ "IDialogInboundVGrain.cs", "_i_dialog_inbound_v_grain_8cs.html", "_i_dialog_inbound_v_grain_8cs" ],
+    [ "IDialogOutboundVGrain.cs", "_i_dialog_outbound_v_grain_8cs.html", "_i_dialog_outbound_v_grain_8cs" ],
+    [ "IDialogPostProcessorVGrain.cs", "_i_dialog_post_processor_v_grain_8cs.html", "_i_dialog_post_processor_v_grain_8cs" ],
+    [ "IDialogPreProcessorVGrain.cs", "_i_dialog_pre_processor_v_grain_8cs.html", "_i_dialog_pre_processor_v_grain_8cs" ],
+    [ "IDialogProcessorVGrain.cs", "_i_dialog_processor_v_grain_8cs.html", "_i_dialog_processor_v_grain_8cs" ],
+    [ "IEmotionnalInboundProcessorVGrain.cs", "_i_emotionnal_inbound_processor_v_grain_8cs.html", "_i_emotionnal_inbound_processor_v_grain_8cs" ],
+    [ "IEmotionnalOutboundVGrain.cs", "_i_emotionnal_outbound_v_grain_8cs.html", "_i_emotionnal_outbound_v_grain_8cs" ],
+    [ "Program.cs", "_localhost_8_a_i_8_dialog_server_2_program_8cs.html", null ],
+    [ "Resource.Designer.cs", "_resource_8_designer_8cs.html", "_resource_8_designer_8cs" ]
+];
