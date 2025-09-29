@@ -61,7 +61,7 @@ namespace Localhost.AI.Dialog
             _session = new SessionManager(_config);
             
             // Log the start of inbound processing
-            _session.LogSave("Dialog Inbound...", "DIALOGSERVER-AGENT-INBOUND", "Info");
+            _session.LogSave("Dialog Inbound...", _config.AppName, "Info");
             
             // Load the completion object from the repository
             _completion = _session.CompletionLoad(completionId);
@@ -107,12 +107,12 @@ namespace Localhost.AI.Dialog
                 _session.CompletionSave(_completion);
                 
                 // Log successful completion of inbound processing
-                _session.LogSave($"Inbound for completion Id {completionId}", "DIALOGSERVER-AGENT-INBOUND", "Info");
+                _session.LogSave($"Inbound for completion Id {completionId}", _config.AppName, "Info");
             }
             else
             {
                 // Log error if completion was not found
-                _session.LogSave($"Completion with Id {completionId} not found", "DIALOGSERVER-AGENT-CONTEXTUPDATE", "Error");
+                _session.LogSave($"Completion with Id {completionId} not found", _config.AppName, "Error");
             }
             
             // Return the completion ID for the next step in the pipeline

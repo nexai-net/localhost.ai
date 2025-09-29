@@ -41,7 +41,7 @@ namespace Localhost.AI.Dialog
 
             _config = ConfigurationManager.GetFromFile<Config>("config.json");
             _session = new SessionManager(_config);
-            _session.LogSave("Cache processor ", "DIALOGSERVER-AGENT-CACHEPROCESSOR", "Info");
+            _session.LogSave("Cache processor ", _config.AppName, "Info");
 
             _completion = _session.CompletionLoad(completionId);
 
@@ -58,13 +58,13 @@ namespace Localhost.AI.Dialog
                     // for simplicity, we take the first cache entry found
                     _completion.isCached = true;
                     _completion.cachedCompletion = caches[0].completion;
-                    _session.LogSave($"Cache hit for completion Id {completionId}", "DIALOGSERVER-AGENT-CACHEMGT", "Info");
+                    _session.LogSave($"Cache hit for completion Id {completionId}", _config.AppName, "Info");
                 }
                 else
                 {
                     _completion.isCached = false;
                     _completion.cachedCompletion = "";
-                    _session.LogSave($"No cache found for completion Id {completionId}", "DIALOGSERVER-AGENT-CACHEMGT", "Info");
+                    _session.LogSave($"No cache found for completion Id {completionId}", _config.AppName, "Info");
                 }
 
 
@@ -79,11 +79,11 @@ namespace Localhost.AI.Dialog
                 });
 
                 _session.CompletionSave(_completion);
-                _session.LogSave($"Cache updated for completion Id {completionId}", "DIALOGSERVER-AGENT-CACHEMGT", "Info");
+                _session.LogSave($"Cache updated for completion Id {completionId}", _config.AppName, "Info");
             }
             else
             {
-                _session.LogSave($"Completion with Id {completionId} not found", "DIALOGSERVER-AGENT-CACHEMGT", "Error");
+                _session.LogSave($"Completion with Id {completionId} not found", _config.AppName, "Error");
             }
             return completionId;
         }

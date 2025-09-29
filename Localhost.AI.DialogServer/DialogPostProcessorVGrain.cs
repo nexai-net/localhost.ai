@@ -42,7 +42,7 @@ namespace Localhost.AI.Dialog
 
             _config = ConfigurationManager.GetFromFile<Config>("config.json");
             _session = new SessionManager(_config);
-            _session.LogSave("DialogPostProcessor ", "DIALOGSERVER_AGENT_POSTPROCESSOR", "Info");
+            _session.LogSave("DialogPostProcessor ", _config.AppName, "Info");
             _completion = _session.CompletionLoad(completionId);
 
             if (_completion != null)
@@ -61,11 +61,11 @@ namespace Localhost.AI.Dialog
                 });
 
                 _session.CompletionSave(_completion);
-                _session.LogSave($"Outbound for completion Id {completionId}", "DIALOGSERVER-AGENT-POSTPROCESSOR", "INFO");
+                _session.LogSave($"Outbound for completion Id {completionId}", _config.AppName, "INFO");
             }
             else
             {
-                _session.LogSave($"Completion with Id {completionId} not found", "DIALOGSERVER-AGENT-OUTBOUND", "Error");
+                _session.LogSave($"Completion with Id {completionId} not found", _config.AppName, "Error");
             }
             return completionId;
 

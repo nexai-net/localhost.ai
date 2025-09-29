@@ -45,7 +45,7 @@ namespace Localhost.AI.Dialog
 
             _config = ConfigurationManager.GetFromFile<Config>("config.json");
             _session = new SessionManager(_config);
-            _session.LogSave("EmotionnalInboundProcessor", "DIALOGSERVER_AGENT_PROCESSOR", "Info");
+            _session.LogSave("EmotionnalInboundProcessor", _config.AppName, "Info");
             _completion = _session.CompletionLoad(completionId);
 
             if (_completion != null)
@@ -62,11 +62,11 @@ namespace Localhost.AI.Dialog
                 });
 
                 _session.CompletionSave(_completion);
-                _session.LogSave($"Inbound for completion Id {completionId}", "DIALOGSERVER-AGENT-INBOUND", "Info");
+                _session.LogSave($"Inbound for completion Id {completionId}", _config.AppName, "Info");
             }
             else
             {
-                _session.LogSave($"Completion with Id {completionId} not found", "DIALOGSERVER-AGENT-CONTEXTUPDATE", "Error");
+                _session.LogSave($"Completion with Id {completionId} not found", _config.AppName, "Error");
             }
             return completionId;
         }
