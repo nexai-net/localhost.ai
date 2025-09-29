@@ -7,7 +7,7 @@
         xmlns:converters="clr-namespace:Localhost.AI.LlmClient.Converters"
         xmlns:helpers="clr-namespace:Localhost.AI.LlmClient.Converters"
         mc:Ignorable="d"
-        Title="Ollama Chatbot" Height="700" Width="1000"
+        Title="Localhost AI Chatbot" Height="1000" Width="1000"
         WindowStartupLocation="CenterScreen"
         Background="#F5F5F5">
 

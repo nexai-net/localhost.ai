@@ -8,6 +8,10 @@ namespace Localhost.AI.LlmClient.Services
     using Newtonsoft.Json;
     using Localhost.AI.Core.Models.LLM;
 
+
+    /// <summary>
+    /// Honte à moi j'ai généré ce code avec Cursor.... Sérieux pour tester, mais j'ai galéré à le faire marcher
+    /// </summary>
     public class OllamaService
     {
         private readonly HttpClient _httpClient;
@@ -37,13 +41,19 @@ namespace Localhost.AI.LlmClient.Services
             return strings;
         }
 
+        /// <summary>
+        /// Envoie un message au modèle Ollama ou mon serveur de dialogue spécifié et retourne la réponse.
+        /// </summary>
+        /// <param name="message">Le prompt</param>
+        /// <param name="model">le modèle par défaut</param>
+        /// <returns></returns>
         public async Task<string> SendMessageAsync(string message, string model = "llama2")
         {
             try
             {
                 Request request = new Request
                 {
-                    model = "msitral-small3.1",
+                    model = "mistral-small3.1",
                     messages = new List<Message>
                     {
                         new Message
@@ -54,7 +64,7 @@ namespace Localhost.AI.LlmClient.Services
                         new Message
                         {
                             role = "system",
-                            content = "be long"
+                            content = "be short"
                         },
 
                     },
