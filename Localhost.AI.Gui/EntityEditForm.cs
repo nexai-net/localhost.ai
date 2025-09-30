@@ -110,6 +110,7 @@ namespace Localhost.AI.Gui
                 textBoxWithout.Text = entity.WithoutWhat;
                 textBoxWhere.Text = entity.Where;
                 textBoxWhen.Text = entity.When;
+                textBoxComment.Text = entity.Comment;
             }
         }
 
@@ -172,6 +173,9 @@ namespace Localhost.AI.Gui
                 _entity.Where = textBoxWhere.Text;
                 _entity.When = textBoxWhen.Text;
                 _entity.Date = DateTime.Now;
+                _entity.UserName = Environment.UserName;
+                _entity.MachineName = Environment.MachineName;
+                _entity.Comment = textBoxComment.Text;
 
                 _session.EntitySave(_entity);
             }

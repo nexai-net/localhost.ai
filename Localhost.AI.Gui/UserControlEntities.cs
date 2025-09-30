@@ -26,7 +26,7 @@ namespace Localhost.AI.Gui
             Config config = ConfigurationManager.GetFromFile<Config>("config.json");
             _config = config;
             _session = new SessionManager(_config);
-            ApplyDarkTheme(this);
+            //ApplyDarkTheme(this);
 
         }
 

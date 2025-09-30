@@ -41,27 +41,26 @@
             checkBoxSearch = new CheckBox();
             checkBoxFeedback = new CheckBox();
             checkBoxDreamer = new CheckBox();
-            groupBox6 = new GroupBox();
-            textBoxReflex = new TextBox();
-            groupBox7 = new GroupBox();
-            textBoxThinking = new TextBox();
-            groupBox8 = new GroupBox();
-            textBoxQuestions = new TextBox();
-            groupBox9 = new GroupBox();
-            textBoxExpectations = new TextBox();
             buttonSave = new Button();
-            button1 = new Button();
-            textBoxName = new TextBox();
+            textBoxComment = new TextBox();
             label2 = new Label();
             label3 = new Label();
+            comboBoxMode = new ComboBox();
+            label4 = new Label();
+            label5 = new Label();
+            textBoxGeneratedTags = new TextBox();
+            label6 = new Label();
+            textBoxGeneratedPromptSystem = new TextBox();
+            label7 = new Label();
+            textBoxGeneratedSentence = new TextBox();
+            label8 = new Label();
+            textBoxRegexPatterns = new TextBox();
+            labelName = new Label();
+            textBoxProcessorName = new TextBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox4.SuspendLayout();
-            groupBox6.SuspendLayout();
-            groupBox7.SuspendLayout();
-            groupBox8.SuspendLayout();
-            groupBox9.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -76,7 +75,7 @@
             // groupBox1
             // 
             groupBox1.Controls.Add(textBoxShould);
-            groupBox1.Location = new Point(48, 146);
+            groupBox1.Location = new Point(47, 368);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(352, 200);
             groupBox1.TabIndex = 1;
@@ -94,7 +93,7 @@
             // groupBox2
             // 
             groupBox2.Controls.Add(textBoxMust);
-            groupBox2.Location = new Point(415, 146);
+            groupBox2.Location = new Point(414, 368);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(352, 200);
             groupBox2.TabIndex = 2;
@@ -113,7 +112,7 @@
             // groupBox3
             // 
             groupBox3.Controls.Add(textBoxMustNot);
-            groupBox3.Location = new Point(787, 146);
+            groupBox3.Location = new Point(786, 368);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(352, 200);
             groupBox3.TabIndex = 3;
@@ -131,7 +130,7 @@
             // groupBox4
             // 
             groupBox4.Controls.Add(textBoxShouldNot);
-            groupBox4.Location = new Point(1158, 146);
+            groupBox4.Location = new Point(1157, 368);
             groupBox4.Name = "groupBox4";
             groupBox4.Size = new Size(352, 200);
             groupBox4.TabIndex = 4;
@@ -149,7 +148,7 @@
             // checkBoxDialog
             // 
             checkBoxDialog.AutoSize = true;
-            checkBoxDialog.Location = new Point(605, 384);
+            checkBoxDialog.Location = new Point(93, 151);
             checkBoxDialog.Name = "checkBoxDialog";
             checkBoxDialog.Size = new Size(60, 19);
             checkBoxDialog.TabIndex = 5;
@@ -160,7 +159,7 @@
             // checkBoxSearch
             // 
             checkBoxSearch.AutoSize = true;
-            checkBoxSearch.Location = new Point(695, 384);
+            checkBoxSearch.Location = new Point(183, 151);
             checkBoxSearch.Name = "checkBoxSearch";
             checkBoxSearch.Size = new Size(61, 19);
             checkBoxSearch.TabIndex = 6;
@@ -170,7 +169,7 @@
             // checkBoxFeedback
             // 
             checkBoxFeedback.AutoSize = true;
-            checkBoxFeedback.Location = new Point(787, 384);
+            checkBoxFeedback.Location = new Point(275, 151);
             checkBoxFeedback.Name = "checkBoxFeedback";
             checkBoxFeedback.Size = new Size(76, 19);
             checkBoxFeedback.TabIndex = 7;
@@ -180,144 +179,171 @@
             // checkBoxDreamer
             // 
             checkBoxDreamer.AutoSize = true;
-            checkBoxDreamer.Location = new Point(892, 384);
+            checkBoxDreamer.Location = new Point(380, 151);
             checkBoxDreamer.Name = "checkBoxDreamer";
             checkBoxDreamer.Size = new Size(71, 19);
             checkBoxDreamer.TabIndex = 8;
             checkBoxDreamer.Text = "Dreamer";
             checkBoxDreamer.UseVisualStyleBackColor = true;
             // 
-            // groupBox6
-            // 
-            groupBox6.Controls.Add(textBoxReflex);
-            groupBox6.Location = new Point(48, 432);
-            groupBox6.Name = "groupBox6";
-            groupBox6.Size = new Size(352, 200);
-            groupBox6.TabIndex = 9;
-            groupBox6.TabStop = false;
-            groupBox6.Text = "Reflex";
-            // 
-            // textBoxReflex
-            // 
-            textBoxReflex.Location = new Point(16, 35);
-            textBoxReflex.Multiline = true;
-            textBoxReflex.Name = "textBoxReflex";
-            textBoxReflex.Size = new Size(319, 149);
-            textBoxReflex.TabIndex = 1;
-            // 
-            // groupBox7
-            // 
-            groupBox7.Controls.Add(textBoxThinking);
-            groupBox7.Location = new Point(415, 432);
-            groupBox7.Name = "groupBox7";
-            groupBox7.Size = new Size(352, 200);
-            groupBox7.TabIndex = 10;
-            groupBox7.TabStop = false;
-            groupBox7.Text = "Thinking";
-            // 
-            // textBoxThinking
-            // 
-            textBoxThinking.Location = new Point(22, 35);
-            textBoxThinking.Multiline = true;
-            textBoxThinking.Name = "textBoxThinking";
-            textBoxThinking.Size = new Size(319, 149);
-            textBoxThinking.TabIndex = 2;
-            // 
-            // groupBox8
-            // 
-            groupBox8.Controls.Add(textBoxQuestions);
-            groupBox8.Location = new Point(785, 432);
-            groupBox8.Name = "groupBox8";
-            groupBox8.Size = new Size(352, 200);
-            groupBox8.TabIndex = 11;
-            groupBox8.TabStop = false;
-            groupBox8.Text = "Questions";
-            // 
-            // textBoxQuestions
-            // 
-            textBoxQuestions.Location = new Point(19, 35);
-            textBoxQuestions.Multiline = true;
-            textBoxQuestions.Name = "textBoxQuestions";
-            textBoxQuestions.Size = new Size(319, 149);
-            textBoxQuestions.TabIndex = 3;
-            // 
-            // groupBox9
-            // 
-            groupBox9.Controls.Add(textBoxExpectations);
-            groupBox9.Location = new Point(1158, 432);
-            groupBox9.Name = "groupBox9";
-            groupBox9.Size = new Size(352, 200);
-            groupBox9.TabIndex = 12;
-            groupBox9.TabStop = false;
-            groupBox9.Text = "Expectations";
-            // 
-            // textBoxExpectations
-            // 
-            textBoxExpectations.Location = new Point(16, 35);
-            textBoxExpectations.Multiline = true;
-            textBoxExpectations.Name = "textBoxExpectations";
-            textBoxExpectations.Size = new Size(319, 149);
-            textBoxExpectations.TabIndex = 4;
-            // 
             // buttonSave
             // 
-            buttonSave.Location = new Point(1158, 651);
+            buttonSave.Location = new Point(1158, 689);
             buttonSave.Name = "buttonSave";
-            buttonSave.Size = new Size(352, 64);
+            buttonSave.Size = new Size(352, 26);
             buttonSave.TabIndex = 13;
             buttonSave.Text = "Save";
             buttonSave.UseVisualStyleBackColor = true;
             buttonSave.Click += buttonSave_Click;
             // 
-            // button1
+            // textBoxComment
             // 
-            button1.Location = new Point(785, 651);
-            button1.Name = "button1";
-            button1.Size = new Size(352, 64);
-            button1.TabIndex = 14;
-            button1.Text = "Create a variant";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // textBoxName
-            // 
-            textBoxName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBoxName.Location = new Point(490, 67);
-            textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(588, 29);
-            textBoxName.TabIndex = 0;
-            textBoxName.TextChanged += textBox1_TextChanged;
+            textBoxComment.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBoxComment.Location = new Point(308, 108);
+            textBoxComment.Name = "textBoxComment";
+            textBoxComment.Size = new Size(1186, 29);
+            textBoxComment.TabIndex = 0;
+            textBoxComment.TextChanged += textBox1_TextChanged;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(764, 37);
+            label2.Location = new Point(241, 116);
             label2.Name = "label2";
-            label2.Size = new Size(101, 15);
+            label2.Size = new Size(61, 15);
             label2.TabIndex = 15;
-            label2.Text = "Name (optionnal)";
+            label2.Text = "Comment";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(1085, 75);
+            label3.Location = new Point(64, 676);
             label3.Name = "label3";
             label3.Size = new Size(16, 15);
             label3.TabIndex = 16;
             label3.Text = "...";
             // 
+            // comboBoxMode
+            // 
+            comboBoxMode.FormattingEnabled = true;
+            comboBoxMode.Items.AddRange(new object[] { "In", "Out", "Intra" });
+            comboBoxMode.Location = new Point(93, 113);
+            comboBoxMode.Name = "comboBoxMode";
+            comboBoxMode.Size = new Size(121, 23);
+            comboBoxMode.TabIndex = 17;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(49, 116);
+            label4.Name = "label4";
+            label4.Size = new Size(38, 15);
+            label4.TabIndex = 18;
+            label4.Text = "Mode";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(294, 584);
+            label5.Name = "label5";
+            label5.Size = new Size(86, 15);
+            label5.TabIndex = 19;
+            label5.Text = "Generated tags";
+            // 
+            // textBoxGeneratedTags
+            // 
+            textBoxGeneratedTags.Location = new Point(294, 602);
+            textBoxGeneratedTags.Multiline = true;
+            textBoxGeneratedTags.Name = "textBoxGeneratedTags";
+            textBoxGeneratedTags.Size = new Size(319, 23);
+            textBoxGeneratedTags.TabIndex = 20;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(635, 605);
+            label6.Name = "label6";
+            label6.Size = new Size(145, 15);
+            label6.TabIndex = 21;
+            label6.Text = "Generated Prompt System";
+            // 
+            // textBoxGeneratedPromptSystem
+            // 
+            textBoxGeneratedPromptSystem.Location = new Point(786, 602);
+            textBoxGeneratedPromptSystem.Name = "textBoxGeneratedPromptSystem";
+            textBoxGeneratedPromptSystem.Size = new Size(720, 23);
+            textBoxGeneratedPromptSystem.TabIndex = 22;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(668, 634);
+            label7.Name = "label7";
+            label7.Size = new Size(112, 15);
+            label7.TabIndex = 23;
+            label7.Text = "Generated Sentence";
+            label7.Click += label7_Click;
+            // 
+            // textBoxGeneratedSentence
+            // 
+            textBoxGeneratedSentence.Location = new Point(786, 631);
+            textBoxGeneratedSentence.Name = "textBoxGeneratedSentence";
+            textBoxGeneratedSentence.Size = new Size(720, 23);
+            textBoxGeneratedSentence.TabIndex = 24;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(49, 203);
+            label8.Name = "label8";
+            label8.Size = new Size(86, 15);
+            label8.TabIndex = 25;
+            label8.Text = "Regex/Patterns";
+            // 
+            // textBoxRegexPatterns
+            // 
+            textBoxRegexPatterns.Location = new Point(141, 203);
+            textBoxRegexPatterns.Multiline = true;
+            textBoxRegexPatterns.Name = "textBoxRegexPatterns";
+            textBoxRegexPatterns.Size = new Size(1351, 149);
+            textBoxRegexPatterns.TabIndex = 26;
+            // 
+            // labelName
+            // 
+            labelName.AutoSize = true;
+            labelName.Location = new Point(57, 57);
+            labelName.Name = "labelName";
+            labelName.Size = new Size(34, 15);
+            labelName.TabIndex = 27;
+            labelName.Text = "Nom";
+            // 
+            // textBoxProcessorName
+            // 
+            textBoxProcessorName.Location = new Point(93, 54);
+            textBoxProcessorName.Name = "textBoxProcessorName";
+            textBoxProcessorName.Size = new Size(1399, 23);
+            textBoxProcessorName.TabIndex = 28;
+            // 
             // UserControlSymbolicProcessor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(textBoxProcessorName);
+            Controls.Add(labelName);
+            Controls.Add(textBoxRegexPatterns);
+            Controls.Add(label8);
+            Controls.Add(textBoxGeneratedSentence);
+            Controls.Add(label7);
+            Controls.Add(textBoxGeneratedPromptSystem);
+            Controls.Add(label6);
+            Controls.Add(textBoxGeneratedTags);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(comboBoxMode);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(textBoxName);
-            Controls.Add(button1);
+            Controls.Add(textBoxComment);
             Controls.Add(buttonSave);
-            Controls.Add(groupBox9);
-            Controls.Add(groupBox8);
-            Controls.Add(groupBox7);
-            Controls.Add(groupBox6);
             Controls.Add(checkBoxDreamer);
             Controls.Add(checkBoxFeedback);
             Controls.Add(checkBoxSearch);
@@ -328,7 +354,7 @@
             Controls.Add(groupBox1);
             Controls.Add(label1);
             Name = "UserControlSymbolicProcessor";
-            Size = new Size(1904, 732);
+            Size = new Size(1532, 732);
             Load += UserControlSymbolicProcessor_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
@@ -338,14 +364,6 @@
             groupBox3.PerformLayout();
             groupBox4.ResumeLayout(false);
             groupBox4.PerformLayout();
-            groupBox6.ResumeLayout(false);
-            groupBox6.PerformLayout();
-            groupBox7.ResumeLayout(false);
-            groupBox7.PerformLayout();
-            groupBox8.ResumeLayout(false);
-            groupBox8.PerformLayout();
-            groupBox9.ResumeLayout(false);
-            groupBox9.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -361,22 +379,25 @@
         private CheckBox checkBoxSearch;
         private CheckBox checkBoxFeedback;
         private CheckBox checkBoxDreamer;
-        private GroupBox groupBox6;
-        private GroupBox groupBox7;
-        private GroupBox groupBox8;
-        private GroupBox groupBox9;
         private Button buttonSave;
-        private Button button1;
-        private TextBox textBoxName;
+        private TextBox textBoxComment;
         private Label label2;
         private TextBox textBoxShould;
         private TextBox textBoxMust;
         private TextBox textBoxMustNot;
         private TextBox textBoxShouldNot;
-        private TextBox textBoxReflex;
-        private TextBox textBoxThinking;
-        private TextBox textBoxQuestions;
-        private TextBox textBoxExpectations;
         private Label label3;
+        private ComboBox comboBoxMode;
+        private Label label4;
+        private Label label5;
+        private TextBox textBoxGeneratedTags;
+        private Label label6;
+        private TextBox textBoxGeneratedPromptSystem;
+        private Label label7;
+        private TextBox textBoxGeneratedSentence;
+        private Label label8;
+        private TextBox textBoxRegexPatterns;
+        private Label labelName;
+        private TextBox textBoxProcessorName;
     }
 }

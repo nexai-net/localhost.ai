@@ -1,10 +1,11 @@
 ﻿namespace Localhost.AI.Core.Framework
 {
     using Data;
-    using Models.Corpus;
     using Localhost.AI.Core.Helpers;
     using Localhost.AI.Core.Models;
     using Localhost.AI.Core.Models.LLM;
+    using Models.Corpus;
+    using Nest;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -183,6 +184,26 @@
             {
                 // Delete the entity from the ElasticSearch server using its ID
                 ElasticSearchServer.DeleteImpl<Entity>(id);
+                
+                // Return true to indicate successful deletion
+                return true;
+            }
+            catch (Exception ex)
+            {
+                // Log the error to console
+                Console.WriteLine(ex.ToString());
+                
+                // Return false to indicate deletion failed
+                return false;
+            }
+        }
+
+        public bool CacheDelete(string id)
+        {
+            try
+            {
+                // Delete the cache entry from the ElasticSearch server using its ID
+                ElasticSearchServer.DeleteImpl<Cache>(id);
                 
                 // Return true to indicate successful deletion
                 return true;
@@ -446,6 +467,29 @@
             // Return the filtered list of cache entries
             return ret;
         }
+
+
+        public List<Cache> CacheSearchByValue(string value)
+        {
+            // Initialize the result list
+            List<Cache> ret = new List<Cache>();
+            try
+            {
+                // Search for entities in ElasticSearch by name and convert to list
+                ret = ElasticSearchServer.SearchAllInCache(value);
+            }
+            catch (Exception ex)
+            {
+                // Log the error to console
+                Console.WriteLine(ex.ToString());
+
+                // Re-throw the exception to propagate the error
+                throw ex;
+            }
+            // Return the list of found entities
+            return ret;
+        }
+
 
         public List<Entity> EntitySearchByName(string name)
         {

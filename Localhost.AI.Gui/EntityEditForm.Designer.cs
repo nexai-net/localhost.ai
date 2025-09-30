@@ -66,6 +66,8 @@
             label17 = new Label();
             button1 = new Button();
             buttonDeleteEntity = new Button();
+            label18 = new Label();
+            textBoxComment = new TextBox();
             ((System.ComponentModel.ISupportInitialize)trackBarJoy).BeginInit();
             ((System.ComponentModel.ISupportInitialize)trackBarFear).BeginInit();
             ((System.ComponentModel.ISupportInitialize)trackBarAnger).BeginInit();
@@ -108,7 +110,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(29, 52);
+            label1.Location = new Point(29, 84);
             label1.Name = "label1";
             label1.Size = new Size(32, 15);
             label1.TabIndex = 4;
@@ -118,7 +120,7 @@
             // 
             comboBoxEntityType.FormattingEnabled = true;
             comboBoxEntityType.Items.AddRange(new object[] { "PERSON", "LOCATION", "ORGANIZATION", "DATE", "TIME", "COMPANY", "THEORY", "MONEY", "CURRENCY", "APPLICATION", "AGENT", "APP" });
-            comboBoxEntityType.Location = new Point(67, 49);
+            comboBoxEntityType.Location = new Point(67, 81);
             comboBoxEntityType.Name = "comboBoxEntityType";
             comboBoxEntityType.Size = new Size(394, 23);
             comboBoxEntityType.TabIndex = 5;
@@ -126,7 +128,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(475, 52);
+            label3.Location = new Point(475, 84);
             label3.Name = "label3";
             label3.Size = new Size(97, 15);
             label3.TabIndex = 6;
@@ -134,7 +136,7 @@
             // 
             // textBoxShortDescription
             // 
-            textBoxShortDescription.Location = new Point(594, 49);
+            textBoxShortDescription.Location = new Point(594, 81);
             textBoxShortDescription.Name = "textBoxShortDescription";
             textBoxShortDescription.Size = new Size(893, 23);
             textBoxShortDescription.TabIndex = 7;
@@ -142,7 +144,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(32, 99);
+            label4.Location = new Point(32, 131);
             label4.Name = "label4";
             label4.Size = new Size(89, 15);
             label4.TabIndex = 8;
@@ -151,7 +153,7 @@
             // textBoxFullDescription
             // 
             textBoxFullDescription.BorderStyle = BorderStyle.FixedSingle;
-            textBoxFullDescription.Location = new Point(29, 120);
+            textBoxFullDescription.Location = new Point(29, 152);
             textBoxFullDescription.Multiline = true;
             textBoxFullDescription.Name = "textBoxFullDescription";
             textBoxFullDescription.Size = new Size(432, 507);
@@ -160,7 +162,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(475, 102);
+            label5.Location = new Point(475, 134);
             label5.Name = "label5";
             label5.Size = new Size(87, 15);
             label5.TabIndex = 10;
@@ -168,7 +170,7 @@
             // 
             // textBoxRelatedEntities
             // 
-            textBoxRelatedEntities.Location = new Point(594, 94);
+            textBoxRelatedEntities.Location = new Point(594, 126);
             textBoxRelatedEntities.Name = "textBoxRelatedEntities";
             textBoxRelatedEntities.Size = new Size(893, 23);
             textBoxRelatedEntities.TabIndex = 11;
@@ -177,7 +179,7 @@
             // 
             trackBarJoy.Cursor = Cursors.IBeam;
             trackBarJoy.LargeChange = 1;
-            trackBarJoy.Location = new Point(547, 166);
+            trackBarJoy.Location = new Point(547, 198);
             trackBarJoy.Name = "trackBarJoy";
             trackBarJoy.Size = new Size(288, 45);
             trackBarJoy.TabIndex = 100;
@@ -185,7 +187,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(679, 139);
+            label6.Location = new Point(522, 201);
             label6.Name = "label6";
             label6.Size = new Size(24, 15);
             label6.TabIndex = 13;
@@ -195,7 +197,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(677, 223);
+            label7.Location = new Point(517, 255);
             label7.Name = "label7";
             label7.Size = new Size(29, 15);
             label7.TabIndex = 101;
@@ -204,19 +206,17 @@
             // trackBarFear
             // 
             trackBarFear.Cursor = Cursors.IBeam;
-            trackBarFear.LargeChange = 10;
-            trackBarFear.Location = new Point(547, 250);
-            trackBarFear.Maximum = 100;
+            trackBarFear.LargeChange = 1;
+            trackBarFear.Location = new Point(547, 243);
             trackBarFear.Name = "trackBarFear";
             trackBarFear.Size = new Size(288, 45);
-            trackBarFear.SmallChange = 10;
             trackBarFear.TabIndex = 102;
             trackBarFear.TickStyle = TickStyle.Both;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(672, 307);
+            label8.Location = new Point(509, 309);
             label8.Name = "label8";
             label8.Size = new Size(39, 15);
             label8.TabIndex = 103;
@@ -226,7 +226,7 @@
             // 
             trackBarAnger.Cursor = Cursors.IBeam;
             trackBarAnger.LargeChange = 1;
-            trackBarAnger.Location = new Point(547, 334);
+            trackBarAnger.Location = new Point(547, 309);
             trackBarAnger.Name = "trackBarAnger";
             trackBarAnger.Size = new Size(288, 45);
             trackBarAnger.TabIndex = 104;
@@ -234,7 +234,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(667, 391);
+            label9.Location = new Point(499, 361);
             label9.Name = "label9";
             label9.Size = new Size(49, 15);
             label9.TabIndex = 105;
@@ -244,7 +244,7 @@
             // 
             trackBarSadness.Cursor = Cursors.IBeam;
             trackBarSadness.LargeChange = 1;
-            trackBarSadness.Location = new Point(547, 418);
+            trackBarSadness.Location = new Point(547, 360);
             trackBarSadness.Name = "trackBarSadness";
             trackBarSadness.Size = new Size(288, 45);
             trackBarSadness.TabIndex = 106;
@@ -252,7 +252,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(668, 475);
+            label10.Location = new Point(502, 411);
             label10.Name = "label10";
             label10.Size = new Size(46, 15);
             label10.TabIndex = 107;
@@ -262,14 +262,14 @@
             // 
             trackBarDisgust.Cursor = Cursors.IBeam;
             trackBarDisgust.LargeChange = 1;
-            trackBarDisgust.Location = new Point(547, 502);
+            trackBarDisgust.Location = new Point(547, 411);
             trackBarDisgust.Name = "trackBarDisgust";
             trackBarDisgust.Size = new Size(288, 45);
             trackBarDisgust.TabIndex = 108;
             // 
             // dateTimeFrom
             // 
-            dateTimeFrom.Location = new Point(594, 561);
+            dateTimeFrom.Location = new Point(475, 492);
             dateTimeFrom.Name = "dateTimeFrom";
             dateTimeFrom.Size = new Size(200, 23);
             dateTimeFrom.TabIndex = 109;
@@ -277,7 +277,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(526, 567);
+            label11.Location = new Point(547, 474);
             label11.Name = "label11";
             label11.Size = new Size(62, 15);
             label11.TabIndex = 110;
@@ -286,7 +286,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(526, 607);
+            label12.Location = new Point(748, 474);
             label12.Name = "label12";
             label12.Size = new Size(47, 15);
             label12.TabIndex = 112;
@@ -294,7 +294,7 @@
             // 
             // dateTimeTo
             // 
-            dateTimeTo.Location = new Point(594, 601);
+            dateTimeTo.Location = new Point(681, 492);
             dateTimeTo.Name = "dateTimeTo";
             dateTimeTo.Size = new Size(200, 23);
             dateTimeTo.TabIndex = 111;
@@ -302,7 +302,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(913, 139);
+            label13.Location = new Point(946, 171);
             label13.Name = "label13";
             label13.Size = new Size(46, 15);
             label13.TabIndex = 113;
@@ -310,24 +310,24 @@
             // 
             // textBoxHowTo
             // 
-            textBoxHowTo.Location = new Point(913, 166);
+            textBoxHowTo.Location = new Point(1002, 168);
             textBoxHowTo.Multiline = true;
             textBoxHowTo.Name = "textBoxHowTo";
-            textBoxHowTo.Size = new Size(574, 60);
+            textBoxHowTo.Size = new Size(485, 51);
             textBoxHowTo.TabIndex = 114;
             // 
             // textBoxWithWhat
             // 
-            textBoxWithWhat.Location = new Point(913, 262);
+            textBoxWithWhat.Location = new Point(1002, 225);
             textBoxWithWhat.Multiline = true;
             textBoxWithWhat.Name = "textBoxWithWhat";
-            textBoxWithWhat.Size = new Size(574, 60);
+            textBoxWithWhat.Size = new Size(485, 52);
             textBoxWithWhat.TabIndex = 116;
             // 
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(913, 235);
+            label14.Location = new Point(933, 228);
             label14.Name = "label14";
             label14.Size = new Size(63, 15);
             label14.TabIndex = 115;
@@ -335,16 +335,16 @@
             // 
             // textBoxWithout
             // 
-            textBoxWithout.Location = new Point(913, 356);
+            textBoxWithout.Location = new Point(1002, 283);
             textBoxWithout.Multiline = true;
             textBoxWithout.Name = "textBoxWithout";
-            textBoxWithout.Size = new Size(574, 60);
+            textBoxWithout.Size = new Size(485, 56);
             textBoxWithout.TabIndex = 118;
             // 
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(913, 329);
+            label15.Location = new Point(946, 286);
             label15.Name = "label15";
             label15.Size = new Size(50, 15);
             label15.TabIndex = 117;
@@ -352,16 +352,16 @@
             // 
             // textBoxWhere
             // 
-            textBoxWhere.Location = new Point(913, 456);
+            textBoxWhere.Location = new Point(1002, 345);
             textBoxWhere.Multiline = true;
             textBoxWhere.Name = "textBoxWhere";
-            textBoxWhere.Size = new Size(574, 60);
+            textBoxWhere.Size = new Size(485, 57);
             textBoxWhere.TabIndex = 120;
             // 
             // label16
             // 
             label16.AutoSize = true;
-            label16.Location = new Point(913, 429);
+            label16.Location = new Point(951, 348);
             label16.Name = "label16";
             label16.Size = new Size(41, 15);
             label16.TabIndex = 119;
@@ -369,16 +369,16 @@
             // 
             // textBoxWhen
             // 
-            textBoxWhen.Location = new Point(913, 567);
+            textBoxWhen.Location = new Point(1002, 408);
             textBoxWhen.Multiline = true;
             textBoxWhen.Name = "textBoxWhen";
-            textBoxWhen.Size = new Size(574, 60);
+            textBoxWhen.Size = new Size(485, 57);
             textBoxWhen.TabIndex = 122;
             // 
             // label17
             // 
             label17.AutoSize = true;
-            label17.Location = new Point(913, 540);
+            label17.Location = new Point(946, 411);
             label17.Name = "label17";
             label17.Size = new Size(38, 15);
             label17.TabIndex = 121;
@@ -398,18 +398,35 @@
             // 
             buttonDeleteEntity.Location = new Point(1034, 643);
             buttonDeleteEntity.Name = "buttonDeleteEntity";
-            buttonDeleteEntity.Size = new Size(75, 23);
+            buttonDeleteEntity.Size = new Size(126, 23);
             buttonDeleteEntity.TabIndex = 124;
             buttonDeleteEntity.Text = "Delete";
             buttonDeleteEntity.UseVisualStyleBackColor = true;
             buttonDeleteEntity.Click += buttonDeleteEntity_Click;
             // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new Point(0, 47);
+            label18.Name = "label18";
+            label18.Size = new Size(61, 15);
+            label18.TabIndex = 125;
+            label18.Text = "Comment";
+            // 
+            // textBoxComment
+            // 
+            textBoxComment.Location = new Point(67, 44);
+            textBoxComment.Name = "textBoxComment";
+            textBoxComment.Size = new Size(1420, 23);
+            textBoxComment.TabIndex = 126;
+            // 
             // EntityEditForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.BackgroundPanelMain;
             ClientSize = new Size(1503, 678);
+            Controls.Add(textBoxComment);
+            Controls.Add(label18);
             Controls.Add(buttonDeleteEntity);
             Controls.Add(button1);
             Controls.Add(textBoxWhen);
@@ -503,5 +520,7 @@
         private Label label17;
         private Button button1;
         private Button buttonDeleteEntity;
+        private Label label18;
+        private TextBox textBoxComment;
     }
 }

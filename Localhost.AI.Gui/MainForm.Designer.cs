@@ -39,13 +39,13 @@
             hideSansVisageToolStripMenuItem = new ToolStripMenuItem();
             helpToolStripMenuItem = new ToolStripMenuItem();
             panelHeader = new Panel();
+            labelAnswer = new TextBox();
             butAsk = new Button();
             txtBoxAsk = new TextBox();
             pictureBox1 = new PictureBox();
             statusStrip1 = new StatusStrip();
             toolStripStatusLabel1 = new ToolStripStatusLabel();
             panel1 = new Panel();
-            labelAnswer = new TextBox();
             menuStrip1.SuspendLayout();
             panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -117,7 +117,6 @@
             // 
             // panelHeader
             // 
-            panelHeader.BackgroundImage = Properties.Resources.BackgroundHeaderPanel;
             panelHeader.Controls.Add(labelAnswer);
             panelHeader.Controls.Add(butAsk);
             panelHeader.Controls.Add(txtBoxAsk);
@@ -126,6 +125,14 @@
             panelHeader.Name = "panelHeader";
             panelHeader.Size = new Size(1904, 251);
             panelHeader.TabIndex = 1;
+            // 
+            // labelAnswer
+            // 
+            labelAnswer.Location = new Point(974, 26);
+            labelAnswer.Multiline = true;
+            labelAnswer.Name = "labelAnswer";
+            labelAnswer.Size = new Size(885, 135);
+            labelAnswer.TabIndex = 3;
             // 
             // butAsk
             // 
@@ -175,24 +182,16 @@
             // 
             // panel1
             // 
-            panel1.BackgroundImage = Properties.Resources.BackgroundPanelMain;
             panel1.Location = new Point(0, 284);
             panel1.Name = "panel1";
             panel1.Size = new Size(1904, 732);
             panel1.TabIndex = 3;
             // 
-            // labelAnswer
-            // 
-            labelAnswer.Location = new Point(974, 26);
-            labelAnswer.Multiline = true;
-            labelAnswer.Name = "labelAnswer";
-            labelAnswer.Size = new Size(885, 135);
-            labelAnswer.TabIndex = 3;
-            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(1904, 1041);
             Controls.Add(panel1);
             Controls.Add(statusStrip1);

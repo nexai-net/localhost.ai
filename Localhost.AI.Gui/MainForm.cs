@@ -28,6 +28,7 @@ namespace Localhost.AI.Gui
         private readonly UserControlEntities _EntitiesControl;
         private readonly UserControlSymbolicProcessor _symbolicProcessor;
         private readonly UserControlSymbolicProcessorSearch _symbolicProcessorSearch;
+        private readonly UserControlCaches _cachesControl;
         private SessionManager _session;
         private Config _config;
 
@@ -41,13 +42,14 @@ namespace Localhost.AI.Gui
             InitializeComponent();
             
             // Apply dark theme to the form and all child controls
-            ApplyDarkTheme(this);
+            //ApplyDarkTheme(this);
             
             // Initialize user controls for different sections
             _helpControl = new UserControlHelp { Dock = DockStyle.Fill };
             _EntitiesControl = new UserControlEntities { Dock = DockStyle.Fill };
             _symbolicProcessor = new UserControlSymbolicProcessor(null) { Dock = DockStyle.Fill };
             _symbolicProcessorSearch = new UserControlSymbolicProcessorSearch { Dock = DockStyle.Fill };
+            _cachesControl = new UserControlCaches { Dock = DockStyle.Fill };
 
             // Load configuration from file
             Config config = ConfigurationManager.GetFromFile<Config>("config.json");
@@ -92,6 +94,8 @@ namespace Localhost.AI.Gui
                     ShowControl(_EntitiesControl);
                 else if (txtBoxAsk.Text.ToLower().Trim() == "/symbolic") 
                     ShowControl(_symbolicProcessor);
+                else if (txtBoxAsk.Text.ToLower().Trim() == "/caches")
+                    ShowControl(_cachesControl);
                 else
                 {
                     // Create a request object for the AI model

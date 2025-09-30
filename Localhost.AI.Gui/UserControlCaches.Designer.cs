@@ -1,6 +1,6 @@
 ﻿namespace Localhost.AI.Gui
 {
-    partial class UserControlEntities
+    partial class UserControlCaches
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,29 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            EntitiesSearchButton = new Button();
+            addButton = new Button();
             searchTextBox = new TextBox();
             dataGrid = new DataGridView();
-            addButton = new Button();
-            EntitiesSearchButton = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGrid).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // EntitiesSearchButton
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(3, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(119, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Entities management";
+            EntitiesSearchButton.Location = new Point(1068, 11);
+            EntitiesSearchButton.Name = "EntitiesSearchButton";
+            EntitiesSearchButton.Size = new Size(75, 23);
+            EntitiesSearchButton.TabIndex = 7;
+            EntitiesSearchButton.Text = "Search";
+            EntitiesSearchButton.UseVisualStyleBackColor = true;
+            EntitiesSearchButton.Click += EntitiesSearchButton_Click;
+            // 
+            // addButton
+            // 
+            addButton.Location = new Point(1149, 10);
+            addButton.Name = "addButton";
+            addButton.Size = new Size(75, 23);
+            addButton.TabIndex = 6;
+            addButton.Text = "Add";
+            addButton.UseVisualStyleBackColor = true;
             // 
             // searchTextBox
             // 
-            searchTextBox.Location = new Point(22, 28);
+            searchTextBox.Location = new Point(28, 11);
             searchTextBox.Name = "searchTextBox";
             searchTextBox.Size = new Size(1034, 23);
-            searchTextBox.TabIndex = 1;
+            searchTextBox.TabIndex = 5;
             // 
             // dataGrid
             // 
@@ -60,45 +69,22 @@
             dataGrid.BorderStyle = BorderStyle.None;
             dataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGrid.GridColor = SystemColors.Window;
-            dataGrid.Location = new Point(22, 56);
+            dataGrid.Location = new Point(26, 48);
             dataGrid.Name = "dataGrid";
             dataGrid.ReadOnly = true;
             dataGrid.Size = new Size(1852, 659);
-            dataGrid.TabIndex = 2;
+            dataGrid.TabIndex = 8;
             dataGrid.CellDoubleClick += dataGrid_CellDoubleClick;
             // 
-            // addButton
-            // 
-            addButton.Location = new Point(1143, 27);
-            addButton.Name = "addButton";
-            addButton.Size = new Size(75, 23);
-            addButton.TabIndex = 3;
-            addButton.Text = "Add";
-            addButton.UseVisualStyleBackColor = true;
-            addButton.Click += button1_Click;
-            // 
-            // EntitiesSearchButton
-            // 
-            EntitiesSearchButton.Location = new Point(1062, 28);
-            EntitiesSearchButton.Name = "EntitiesSearchButton";
-            EntitiesSearchButton.Size = new Size(75, 23);
-            EntitiesSearchButton.TabIndex = 4;
-            EntitiesSearchButton.Text = "Search";
-            EntitiesSearchButton.UseVisualStyleBackColor = true;
-            EntitiesSearchButton.Click += EntitiesSearchButton_Click;
-            // 
-            // UserControlEntities
+            // UserControlCaches
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(dataGrid);
             Controls.Add(EntitiesSearchButton);
             Controls.Add(addButton);
-            Controls.Add(dataGrid);
             Controls.Add(searchTextBox);
-            Controls.Add(label1);
-            MaximumSize = new Size(1904, 732);
-            MinimumSize = new Size(1904, 732);
-            Name = "UserControlEntities";
+            Name = "UserControlCaches";
             Size = new Size(1904, 732);
             ((System.ComponentModel.ISupportInitialize)dataGrid).EndInit();
             ResumeLayout(false);
@@ -107,10 +93,9 @@
 
         #endregion
 
-        private Label label1;
+        private Button EntitiesSearchButton;
+        private Button addButton;
         private TextBox searchTextBox;
         private DataGridView dataGrid;
-        private Button addButton;
-        private Button EntitiesSearchButton;
     }
 }

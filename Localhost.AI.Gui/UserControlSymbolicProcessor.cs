@@ -25,23 +25,31 @@ namespace Localhost.AI.Gui
             Config config = ConfigurationManager.GetFromFile<Config>("config.json");
             _config = config;
             _session = new SessionManager(_config);
-            ApplyDarkTheme(this);
+            //ApplyDarkTheme(this);
             if (symbolicProcessor != null)
             {
                 _symbolicProcessor = symbolicProcessor;
-                textBoxName.Text = symbolicProcessor.Name;
-                textBoxMust.Text = string.Join(", ", symbolicProcessor.Must);
-                textBoxMustNot.Text = string.Join(", ", symbolicProcessor.MustNot);
-                textBoxShould.Text = string.Join(", ", symbolicProcessor.Should);
-                textBoxShouldNot.Text = string.Join(", ", symbolicProcessor.ShouldNot);
-                textBoxReflex.Text = string.Join(", ", symbolicProcessor.Reflex);
-                textBoxThinking.Text = string.Join(", ", symbolicProcessor.Thinking);
-                textBoxQuestions.Text = string.Join(", ", symbolicProcessor.Questions);
-                textBoxExpectations.Text = string.Join(", ", symbolicProcessor.Expectations);
-                checkBoxDialog.Checked = symbolicProcessor.DialogLayer;
-                checkBoxSearch.Checked = symbolicProcessor.SearchLayer;
-                checkBoxFeedback.Checked = symbolicProcessor.FeedbackLayer;
-                checkBoxDreamer.Checked = symbolicProcessor.DreamerLayer;
+                
+                
+                textBoxProcessorName.Text = _symbolicProcessor.Name;
+                comboBoxMode.Text = _symbolicProcessor.Mode;
+                textBoxComment.Text = symbolicProcessor.Comment;
+
+                checkBoxDialog.Checked = _symbolicProcessor.DialogLayer;
+                checkBoxSearch.Checked = _symbolicProcessor.SearchLayer;
+                checkBoxFeedback.Checked = _symbolicProcessor.FeedbackLayer;
+                checkBoxDreamer.Checked = _symbolicProcessor.DreamerLayer;
+
+                textBoxRegexPatterns.Text = string.Join(", ", _symbolicProcessor.Patterns);
+                textBoxMust.Text = string.Join(", ", _symbolicProcessor.Must);
+                textBoxMustNot.Text = string.Join(", ",_symbolicProcessor.MustNot);
+                textBoxShould.Text = string.Join(", ", _symbolicProcessor.Should);
+                textBoxShouldNot.Text = string.Join(", ", _symbolicProcessor.ShouldNot);
+
+                textBoxGeneratedTags.Text = string.Join(", ", _symbolicProcessor.GeneratedTags);
+                textBoxGeneratedPromptSystem.Text = _symbolicProcessor.GeneratedSystemPrompt;
+                textBoxGeneratedSentence.Text = _symbolicProcessor.GeneratedSentence;
+
             }
             else
             {
@@ -49,7 +57,7 @@ namespace Localhost.AI.Gui
                 _symbolicProcessor.Date = DateTime.Now;
 
             }
-        
+
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
@@ -125,45 +133,40 @@ namespace Localhost.AI.Gui
 
         }
 
-        private void buttonSave_Click(object sender, EventArgs e)
+        private void FormToProcessor()
         {
-            #region "check the form"
-            _symbolicProcessor.Name = textBoxName.Text.Trim();
-            _symbolicProcessor.Must = GetlistElements(textBoxMust.Text);
-            _symbolicProcessor.MustKeySearcgh = textBoxMust.Text.ToLower();
-            _symbolicProcessor.MustNot = GetlistElements(textBoxMustNot.Text);
-            _symbolicProcessor.MustNotKeySearch = textBoxMustNot.Text.ToLower();
-            _symbolicProcessor.Should = GetlistElements(textBoxShould.Text);
-            _symbolicProcessor.ShouldKeySearch = textBoxShould.Text.ToLower();
-            _symbolicProcessor.ShouldNot = GetlistElements(textBoxShouldNot.Text);
-            _symbolicProcessor.ShouldNotKeySearch = textBoxShouldNot.Text.ToLower();
-            _symbolicProcessor.Reflex = GetlistElements(textBoxReflex.Text);
-            _symbolicProcessor.ReflexKeySearch = textBoxReflex.Text.ToLower();
-            _symbolicProcessor.Thinking = GetlistElements(textBoxThinking.Text);
-            _symbolicProcessor.ThinkingKeySearch = textBoxThinking.Text.ToLower();
-            _symbolicProcessor.Questions = GetlistElements(textBoxQuestions.Text);
-            _symbolicProcessor.QuestionsKeySearch = textBoxQuestions.Text.ToLower();
-            _symbolicProcessor.Expectations = GetlistElements(textBoxExpectations.Text);
-            _symbolicProcessor.ExpectationsKeySearch = textBoxExpectations.Text.ToLower();
+            _symbolicProcessor.Name = textBoxProcessorName.Text;
+            _symbolicProcessor.Mode = comboBoxMode.Text;
+            _symbolicProcessor.Comment = textBoxComment.Text;
             _symbolicProcessor.DialogLayer = checkBoxDialog.Checked;
             _symbolicProcessor.SearchLayer = checkBoxSearch.Checked;
             _symbolicProcessor.FeedbackLayer = checkBoxFeedback.Checked;
             _symbolicProcessor.DreamerLayer = checkBoxDreamer.Checked;
-            //+ _symbolicProcessor.Reflex.Count + _symbolicProcessor.Thinking.Count + _symbolicProcessor.Questions.Count + _symbolicProcessor.Expectations.Count 
-
-            if (_symbolicProcessor.Must.Count + _symbolicProcessor.MustNot.Count + _symbolicProcessor.Should.Count + _symbolicProcessor.ShouldNot.Count > 1 && _symbolicProcessor.Reflex.Count + _symbolicProcessor.Thinking.Count + _symbolicProcessor.Questions.Count + _symbolicProcessor.Expectations.Count > 1)
+            _symbolicProcessor.Patterns = GetlistElements(textBoxRegexPatterns.Text);
+            _symbolicProcessor.Must = GetlistElements(textBoxMust.Text);
+            _symbolicProcessor.MustNot = GetlistElements(textBoxMustNot.Text);
+            _symbolicProcessor.Should = GetlistElements(textBoxShould.Text);
+            _symbolicProcessor.ShouldNot = GetlistElements(textBoxShouldNot.Text);
+            _symbolicProcessor.GeneratedTags = GetlistElements(textBoxGeneratedTags.Text);
+            _symbolicProcessor.GeneratedSystemPrompt = textBoxGeneratedPromptSystem.Text;
+            _symbolicProcessor.GeneratedSentence = textBoxGeneratedSentence.Text;
+            _symbolicProcessor.Date = DateTime.Now;
+            _symbolicProcessor.UserName = Environment.UserName;
+            _symbolicProcessor.MachineName = _config.AppName;
+        }
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            FormToProcessor();
+            if (_symbolicProcessor.Id == null) _symbolicProcessor.Id = Guid.NewGuid().ToString();
+            _symbolicProcessor.Comment = "Symbolic processor saved for " + _symbolicProcessor.Name;
+            try
             {
-                string newid = _session.SymbolicProcessorSave(_symbolicProcessor);
-                label1.Text = $"Symbolic Processor '{_symbolicProcessor.Name}' saved with ID: {newid}";
-                _symbolicProcessor.Id = newid;
+                _session.SymbolicProcessorSave(_symbolicProcessor);
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("At least one of the lists must contain elements.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-
+                MessageBox.Show("Error saving symbolic processor: " + ex.Message);
             }
-            #endregion
         }
         private List<string> GetlistElements(string text)
         {
@@ -178,6 +181,11 @@ namespace Localhost.AI.Gui
                 }
             }
             return selectedOptions;
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

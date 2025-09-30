@@ -53,10 +53,12 @@ namespace Localhost.AI.CollectPDF
                     if (_session.DocumentExist(document))
                     {
                         Console.WriteLine("Document allready loaded");
+                        _session.LogSave(_config.AppName, Environment.MachineName, Environment.UserName, "Document " + document + " allready loaded.", "#pdf,#loader,#document", "WARNING");
                     }
                     else
                     {
                         DocumentProcess(document);
+                        _session.LogSave(_config.AppName, Environment.MachineName, Environment.UserName, "Document " + document + " allready loaded.", "#pdf,#loader,#document", "DONE");
                     }
 
 

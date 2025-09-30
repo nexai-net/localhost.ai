@@ -12,20 +12,17 @@ namespace Localhost.AI.Core.Models.LLM
         public string completion { get; set; } = "";
         public string language { get; set; } = "fr";
         public string model { get; set; } = "mistral-small3.1";
-        public string chatmode { get; set; } = "completion"; // chat or completion
+        public string chatmode { get; set; } = "completion"; // chat or completion or diagnostic    
         public List<string> tagsMust { get; set; } = new List<string>();
         public List<string> tagsShould { get; set; } = new List<string>();
         public List<string> tagsMustNot { get; set; } = new List<string>();
         public List<string> tagsShouldNot { get; set; } = new List<string>();
-        public List<NextChoice> nextChoices { get; set; } = new List<NextChoice>();
+        public string ParentCacheId { get; set; } = "";
+        public List<string> generatedTags { get; set; } = new List<string>();
+        public string generatedSystemPrompt { get; set; } = ""; 
 
     }
 
 
-    public class  NextChoice
-    {
-        public string idCache { get; set; } = "";
-        public string text { get; set; } = "";
 
-    }
 }
