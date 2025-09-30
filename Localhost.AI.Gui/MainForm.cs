@@ -108,6 +108,7 @@ namespace Localhost.AI.Gui
                             {
                                 role = "user",
                                 content = txtBoxAsk.Text.Trim()
+                                
                             }
                         }
                     };
@@ -134,9 +135,11 @@ namespace Localhost.AI.Gui
                             parameters = "",
                             language = "fr"
                         };
-
-                        // Send the text to the robot for voice synthesis
-                        RestHelper.PostAsync("http://localhost:8080/api/process", req);
+                        if (labelAnswer.Text.ToLower().Trim().Length < 600 && checkBoxVoice.Checked)
+                        {
+                            // Send the text to the robot for voice synthesis
+                            RestHelper.PostAsync("http://localhost:8080/api/process", req);
+                        }
                     }
                     else
                     {

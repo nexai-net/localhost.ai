@@ -80,6 +80,7 @@ namespace Localhost.AI.Dialog
                 {
                     Cache c = new Cache();
                     c.completion = _completion.response.choices[0].message.content;
+                    // TO DO : modifier cette partie prompt pour reprendre le message user
                     c.prompt = _completion.prompt;
                     c.language = _completion.language;
                     c.model = _completion.request.model;

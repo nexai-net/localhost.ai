@@ -15,6 +15,8 @@
     {
         private static readonly HttpClient httpClient = new HttpClient();
 
+        
+
         /// <summary>
         /// Sends a request to the Ollama API and returns the response.
         /// </summary>

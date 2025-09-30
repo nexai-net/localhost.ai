@@ -39,6 +39,7 @@
             hideSansVisageToolStripMenuItem = new ToolStripMenuItem();
             helpToolStripMenuItem = new ToolStripMenuItem();
             panelHeader = new Panel();
+            checkBoxVoice = new CheckBox();
             labelAnswer = new TextBox();
             butAsk = new Button();
             txtBoxAsk = new TextBox();
@@ -117,6 +118,7 @@
             // 
             // panelHeader
             // 
+            panelHeader.Controls.Add(checkBoxVoice);
             panelHeader.Controls.Add(labelAnswer);
             panelHeader.Controls.Add(butAsk);
             panelHeader.Controls.Add(txtBoxAsk);
@@ -125,6 +127,16 @@
             panelHeader.Name = "panelHeader";
             panelHeader.Size = new Size(1904, 251);
             panelHeader.TabIndex = 1;
+            // 
+            // checkBoxVoice
+            // 
+            checkBoxVoice.AutoSize = true;
+            checkBoxVoice.Location = new Point(868, 142);
+            checkBoxVoice.Name = "checkBoxVoice";
+            checkBoxVoice.Size = new Size(71, 19);
+            checkBoxVoice.TabIndex = 4;
+            checkBoxVoice.Text = "Voice on";
+            checkBoxVoice.UseVisualStyleBackColor = true;
             // 
             // labelAnswer
             // 
@@ -235,5 +247,6 @@
         private ToolStripMenuItem helpToolStripMenuItem;
         private ToolStripMenuItem deleteCacheToolStripMenuItem;
         private TextBox labelAnswer;
+        private CheckBox checkBoxVoice;
     }
 }

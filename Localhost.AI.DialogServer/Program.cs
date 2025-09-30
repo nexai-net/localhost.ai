@@ -41,7 +41,7 @@
 
             builder.Services.AddSwaggerGen(s => s.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo() { Title = "Tuto Demo", Version = "v1" })).AddEndpointsApiExplorer();
 
-            var jsonProcessSeq = Sequence.Build("JFO", fixUid: new Guid("D1F7C7EB-77F7-488A-91D7-77E4D5D16448"), metadataBuilder: m =>
+            var DialogProcessSeq = Sequence.Build("JFO", fixUid: new Guid("D1F7C7EB-77F7-488A-91D7-77E4D5D16448"), metadataBuilder: m =>
                                          {
                                              m.Description("Dialog Sequence")
                                               .AddTags("chatbot", "nexai");
@@ -58,12 +58,21 @@
                                          .Use<IDialogOutboundVGrain>().Configure("JFO-TABLE").Call((g, i, ctx) => g.DoProcess(i, ctx)).Return
                                          .Build();
 
+            var ResearchSeq = Sequence.Build("JFO", fixUid: new Guid("D1F7C7EB-77F7-488A-91D7-77E4D5D16450"), metadataBuilder: m =>
+            {
+                m.Description("Research Sequence")
+                 .AddTags("research", "nexai");
+            })
+                                         .RequiredInput<string>()
+                                         .Use<IPreSearchVGrain>().Configure("JFO-TABLE2").Call((g, i, ctx) => g.DoPreProcess(i, ctx)).Return
+                                         .Build();
+
             builder.Host.UseDemocriteNode(b =>
             {
                 b.WizardConfig()
                 .NoCluster()
                 .ConfigureLogging(c => c.AddConsole())
-                .AddInMemoryDefinitionProvider(d => d.SetupSequences(jsonProcessSeq));
+                .AddInMemoryDefinitionProvider(d => d.SetupSequences(DialogProcessSeq));
                 b.ManualyAdvancedConfig().UseDashboard(options =>
                 {
                     options.HostSelf = true;  // host it inside the silo
@@ -100,7 +109,7 @@
                 
                 /*_session.LogSave($"Request to /aiassistant: {d.messages[d.messages.Count - 1].content}", "DIALOGSERVER_AGENT_PROCESSOR", "Info");*/
 
-                var result = await handler.Sequence<string>(jsonProcessSeq.Uid)
+                var result = await handler.Sequence<string>(DialogProcessSeq.Uid)
                                        .SetInput(id)
                                        .RunAsync<string>();
                 var content = result.SafeGetResult();

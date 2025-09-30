@@ -29,7 +29,7 @@ namespace Localhost.AI.Gui
             _session = new SessionManager(_config);
             _session.LogSave("Application started", "Kaonashi.Gui", "Info");
             _entity = entity;
-            ApplyDarkTheme(this);
+            //ApplyDarkTheme(this);
             PopulateFormCOnstrols();
         }
 

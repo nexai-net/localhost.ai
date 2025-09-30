@@ -31,5 +31,6 @@
   },
   "LatencyMs": 0,
   "OllamaUrl": "http://localhost:11434/v1/chat/completions",
-  "DialogServerUrl": "http://localhost:50824/v1/chat/completions"
+  "DialogServerUrl": "http://localhost:50824/v1/chat/completions",
+  "RobotUrl": "http://localhost:8080/api/process"
 }

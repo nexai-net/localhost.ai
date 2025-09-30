@@ -12,6 +12,7 @@
         public string OllamaUrl { get; set; } = "http://localhost:11434";
         public string? DialogServerUrl { get; set; }
         public string? ECMRootFolder { get; set; } = "C:\\Documents";
+        public string? RobotUrl { get; set; }
 
         #endregion
 

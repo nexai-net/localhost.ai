@@ -86,7 +86,7 @@ namespace Localhost.AI.Dialog
 
                 foreach (Message m in _completion.request.messages)
                 {
-                    if (m.role == "user")
+                    if (m.role == "system")
                     {
                        m.content = "Context :"+ _completion.prompt;
                     }
