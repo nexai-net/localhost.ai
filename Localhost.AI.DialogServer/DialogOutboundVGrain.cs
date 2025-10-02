@@ -27,7 +27,7 @@ namespace Localhost.AI.Dialog
         private Completion _completion;
 
         /// <summary>
-        /// Initializes a new instance of the DialogOutboundVGrain.
+        /// Initializes a new instance of the DialogOutboundVGrain.  
         /// </summary>
         /// <param name="logger">The logger instance for this grain.</param>
         public DialogOutboundVGrain(ILogger<IDialogOutboundVGrain> logger) : base(logger)
